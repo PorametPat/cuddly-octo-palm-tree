@@ -1,5 +1,7 @@
 <script lang="ts">
 	import type { PageProps } from './$types';
+	// import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 
 	let { data }: PageProps = $props();
 </script>
@@ -10,6 +12,9 @@
 		<li>
 			<h2>{post.title}</h2>
 			<p>{post.summary}</p>
+			<a
+				href={resolve(`/posts/${post.slug}/`)}>Go to</a
+			>
 		</li>
 	{/each}
 </ul>

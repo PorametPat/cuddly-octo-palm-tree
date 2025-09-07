@@ -13,7 +13,8 @@
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
 		"test:unit": "vitest",
-		"test": "npm run test:unit -- --run"
+		"test": "npm run test:unit -- --run",
+		"deploy": "pnpx gh-pages -d build -t"
 	},
 	"devDependencies": {
 		"@content-collections/core": "^0.11.1",
