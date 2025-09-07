@@ -6,4 +6,6 @@
 	const post = $derived(data.post);
 </script>
 
-<h1>{post.title}</h1>
+<div class='prose container mx-auto px-4'>
+	{@html post.content}
+</div>
