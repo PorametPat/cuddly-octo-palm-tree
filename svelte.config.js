@@ -10,6 +10,9 @@ const config = {
 		adapter: adapter(),
 		paths: {
 			base: process.env.NODE_ENV === 'production' ? '/cuddly-octo-palm-tree' : ''
+		},
+		alias: {
+			'content-collections': './.content-collections/generated'
 		}
 	}
 };
